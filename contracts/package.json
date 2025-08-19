@@ -1,0 +1,49 @@
+{
+  "name": "waternity-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Waternity - Hedera-native water access platform",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network testnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+    "verify": "hardhat verify",
+    "clean": "hardhat clean",
+    "size": "hardhat size-contracts",
+    "coverage": "hardhat coverage"
+  },
+  "keywords": [
+    "hedera",
+    "smart-contracts",
+    "water",
+    "iot",
+    "defi",
+    "fractional-ownership"
+  ],
+  "author": "Waternity Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=16.0.0",
+    "chai": "^4.2.0",
+    "ethers": "^6.4.0",
+    "hardhat": "^2.19.0",
+    "hardhat-contract-sizer": "^2.10.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.1",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.3.0",
+    "typescript": ">=4.5.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@hashgraph/sdk": "^2.40.0",
+    "dotenv": "^16.3.0"
+  }
+}
